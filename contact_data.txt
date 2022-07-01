@@ -1,0 +1,6 @@
+Customer 1
+  Name: Daniel Kalemi
+ Email: daniel@gmail.com
+ City: Thessaloniki
+ Address: Ippokratio
+ ______________________ 

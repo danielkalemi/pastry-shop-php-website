@@ -1,0 +1,1122 @@
+/*THOSE ARE GLOBAL ATTRIBUTES*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	
+	background: black;
+	box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.479),
+    -30px 0px 40px rgba(0, 0, 0, 0.753);
+	font-size: 20px;
+	overflow-x: hidden;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	/*The below specifications contain the color mixture 
+	for the gradients and the compatibility with Google Chrome & Safari*/
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+@-moz-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+@keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%
+}
+}
+.contain {
+	max-width: 1100px;
+	margin: auto;
+	
+	}
+
+	.logo{
+		height: 100px;
+		width: auto;
+		float: left;
+		margin-top: 30px;
+		margin-left: 40px;
+	}
+	
+	.main-nav{
+		float: right;
+		margin-top: 60px;
+		margin-right: 30px;
+		padding: 0px;
+		list-style: none;
+	}
+	
+	.main-nav li{
+		float: left;
+		width: 115px;
+		margin-left: 0px;
+		background-color: black;
+		opacity: .6;
+		text-align: center;
+		font-size: 20px;
+	}
+	
+	.main-nav li a{
+		padding: 5px 0;
+		color: #fff;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 90%; 
+		font-weight: 100;
+	}
+	
+	.main-nav li a:hover{
+		border-bottom: 2px solid #bf55ec;
+	}
+	
+		ul li ul li {
+			display: none;
+	}
+	
+	ul li:hover ul li {
+		display: block;
+	}
+	
+	.main-content-header{
+		float: left;
+		position: absolute;
+		margin-top: 20%;
+			margin-left: 4%;
+	}
+	
+	h1{
+		color: #fff;
+		font-size: 240%;  
+		word-spacing: 5px;
+		letter-spacing: 3px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		font-weight: lighter;
+	}
+	
+	.btn{
+		display: inline-block;
+		padding: 10px 30px;
+		font-weight: lighter;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 200px;
+		transition: background-color 0.2s, border 0.2s, color 0.2;
+	}
+	
+	
+	.btn-full{
+		background-color: transparent;
+		color: #bf55ec;
+		margin-right: 15px;
+		border: 1px solid #bf55ec;
+	}
+	
+	.btn-full:hover{
+		background-color: #fff;
+	}
+	
+	.btn-nav{
+		background-color: transparent;
+		color: #fff;
+		border: 1px solid #fff;
+	}
+	
+	.btn-nav:hover{
+		background-color: #bf55ec;
+	}
+
+/*FOR THE index.html file*/
+.indexHeader{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/header-img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+.video{
+	position: "center";
+	 width: 100%; 
+	 height: 650px;
+	 border: 0px;
+}
+
+
+
+.previous {
+  text-decoration: none;
+  display: inline-block;
+	padding: 16px 16px;
+	margin: 0px;
+  background-color: #f1f1f1;
+	color: black;
+	border-radius: 50%;
+}
+
+.previous:hover {
+  background-color: #ddd;
+  color: purple;
+}
+
+.colorchange{
+	animation:  colorchangethapa 1s infinite;
+}
+
+@keyframes colorchangethapa{
+	0%{color: red;}
+	25%{color:#bf55ec; ;}
+	50%{ color: white; }
+	100%{ color:#bf55ec;  }
+}
+
+.sidenav {
+	background-color: rgb(255, 255, 255);
+}
+
+.mobile-icon{display: none;}
+
+
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+
+/*FOR THE blog.html file*/
+body, html{
+  max-width: 1100px;
+  height:100%;
+  margin: auto;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../images/header.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../images/image2.jpg');
+  min-height:600px;
+}
+
+.pimg3{
+  background-image:url('../images/image3.jpg');
+  min-height:600px;
+}
+
+.pimg4{
+  background-image:url('../images/login2.jpg');
+  min-height:600px;
+}
+
+.pimg5{
+  background-image:url('../images/login.jpg');
+  min-height:450px;
+}
+
+.pimg6{
+  background-image:url('../images/thess.jpg');
+  min-height:600px;
+} 
+
+.pimg7{
+  background-image:url('../images/rest1.jpg');
+  min-height:600px;
+}
+
+.pimg8{
+  background-image:url('../images/image3.jpg');
+  min-height:600px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8{
+    background-attachment:scroll;
+  }
+}
+
+/*FOR THE recipes.html file*/
+
+.containerRec {
+  margin-top: 7%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: rgb(137, 32, 178);
+  font-weight: 600;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+	font-family: monospace;
+	padding: 50px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/*FOR THE about.html file*/
+  /* Global */
+  .container{
+    max-width:1100px;;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+  }
+  
+  .button_1{
+    height:38px;
+    background:#e8491d;
+    border:0;
+    padding-left: 20px;
+    padding-right:20px;
+    color:#ffffff;
+  }
+  
+  .dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  
+  /* Showcase */
+  #showcase{
+    min-height:400px;
+    background:url('../images/image3.jpg') no-repeat 0 -400px;
+    text-align:center;
+    color:#eff3ec;
+  }
+  
+  #showcase h1{
+    margin-top:100px;
+    font-size:100px;
+    margin-bottom:10px;
+  }
+  
+  #showcase p{
+    font-size:40px;
+  }
+  
+  /* Newsletter */
+  #newsletter{
+    padding:15px;
+    color:#ffffff;
+    background:#35424a
+  }
+  
+  #newsletter h1{
+    float:left;
+  }
+  
+  #newsletter form {
+    float:right;
+    margin-top:15px;
+  }
+  
+  #newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+  }
+  
+  /* Boxes */
+  #boxes{
+    margin-top:20px;
+    margin-left: 50px;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+  }
+  
+  #boxes .box img{
+    width:90px;
+    height: 90px;
+  }
+  
+  /* Sidebar */
+  aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+  }
+  
+  aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+  }
+  
+  /* Main-col */
+  article#main-col{
+    float:left;
+    width:65%;
+  }
+  
+  /* Services */
+  ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+  
+  /* Media Queries */
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+      float:none;
+      text-align:center;
+      width:100%;
+    }
+  
+    header{
+      padding-bottom:20px;
+    }
+  
+    #showcase h1{
+      margin-top:40px;
+    }
+  
+    #newsletter button, .quote button{
+      display:block;
+      width:100%;
+    }
+  
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+      width:100%;
+      margin-bottom:5px;
+    }
+  }
+  
+/*FOR THE slide.html file*/
+
+/*FOR THE price.html file*/
+
+.free{
+	position: relative;
+}
+h2{
+  text-align:center;
+}
+
+.col{
+  float:left;
+  width:33.3%;
+  padding:8px;
+  box-sizing:border-box;
+}
+
+.price-box{
+  background:#fff;
+  color:#555;
+  list-style-type:none;
+  border:1px solid #555;
+  margin:0;
+  padding:0;
+  transition:0.3s;
+}
+
+.price-box:hover, .price-box.best{
+  box-shadow: 0 10px 15px 0 #000;
+}
+
+.price-box .header{
+  background-color:#111;
+  color:#fff;
+  font-size:25px;
+}
+
+.price-box .header.header-green{
+  background-color:#4CAf50;
+}
+
+.price-box li{
+  padding:20px;
+  border-bottom:1px solid #eee;
+  text-align:center;
+}
+
+.price-box .emph{
+  background-color:#f4f4f4;
+  font-size:20px;
+}
+
+.button{
+  background-color:#4CAf50;
+  border:none;
+  color:#fff;
+  padding: 10px 15px;
+  text-align:center;
+  text-decoration:none;
+  font-size:18px;
+}
+
+@media(max-width:700px){
+  .col{
+    width:100%;
+  }
+}
+
+/*FOR THE direction.html file*/
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	max-width: 1100px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin: auto;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+/*FOR THE contact.html file*/
+.brand{
+  text-align: left;
+}
+
+.brand span{
+  color:#fff;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.company-info{
+  background:#c9e6ff;
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+
+.contact{
+  background:#f9feff;
+}
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
+
+.contact form button{
+  background:#c9e6ff;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+}
+
+/*FOR THE login.html file*/
+h1,h2,h3,h4,h5,h6 {font-weight: 300;}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#right {flex: 1;}
+
+/* Sign In */
+#signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+#signin form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+#signin .logo {padding-top: 30px;}
+
+#signin .logo img {width: 300px;}
+
+#signin label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+#signin .text-input {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  border-radius: 2px;
+  background: white;
+  border: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  line-height: 1.3rem;
+}
+
+#signin .primary-btn {width: 100%;}
+
+#signin .secondary-btn,
+.or {
+  width: 60%;
+}
+
+#signin .or {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+
+#signin .or .bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #aaa;
+}
+
+#signin .or span {
+  color: #ccc;
+  padding: 0 0.8rem;
+}
+
+/* Showcase */
+#showcase {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  background: url('../images/log-in.jpg') no-repeat center center / cover;
+  height: 100vh;
+  text-align: center;
+}
+
+#showcase .showcase-text {
+  font-size: 3rem;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn {
+  width: 60%;
+  margin: auto;
+}
+
+/* Footer */
+#main-footer {
+  color: #ccc;
+  text-align: center;
+  font-size: 0.8rem;
+  max-width: 80%;
+  padding-top: 5rem;
+}
+
+#main-footer a {
+  color: #b116f9;
+  text-decoration: underline;
+}
+
+/* Button */
+.primary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 0;
+  border-radius: 2px;
+  font-weight: 500;
+  background: #010002;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.primary-btn:hover {
+  background-color: #b116f9;
+}
+
+.secondary-btn {
+  padding: 0.7rem 1rem;
+  height: 2.7rem;
+  display: block;
+  border: 1px solid #f4f4f4;
+  border-radius: 2px;
+  font-weight: 500;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.secondary-btn:hover {
+  border-color: #b116f9;
+  color: #b116f9;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  #left {
+    flex: 4;
+  }
+
+  #right {
+    flex: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+
+  #signin .text-input {
+    margin-bottom: 0.7rem;
+  }
+
+  #main-footer {
+    padding-top: 1rem;
+  }
+}
+/*----------------------------------------*/
+
+footer h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+/*//////// Responsive queries //////////*/
+
+@media only screen and (max-width: 1100px){
+	.main-content-header{
+		width:100%;
+		padding:0 2%;
+		position: relative;
+	}
+
+}
+
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%;}	
+
+	.main-nav{display: none;}
+
+	.mobile-icon{ 
+		
+		display: block; 
+		color: #fff;
+		float: right;
+		margin-top: 50px;
+		margin-right: 40px;
+	}
+
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+		
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.btn-full{
+		margin-bottom: 20px;
+	}
+
+	h1{font-size: 180%;}
+}

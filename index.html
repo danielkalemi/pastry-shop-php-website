@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Apallou Cafe</title>
+	<!--Author of the website-->
+	<meta name= author content="Daniel Kalemi"> 
+	<!--This meta tag is used for responsive width on the current device-->
+	<meta name= viewport content= "width=device-width, initial-scale=1.0"> 
+	<!--Meta tag to show the HTML tag correctly-->
+	<meta charset="UTF-8">
+	<!--The CSS File-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Those are APIs from Google and Cloudflare for fonts and animations imported for the CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	
+</head>
+<body>
+	<!--The Javascript File-->
+	<script src="script.js"></script>
+	<!--the "contain" class is used for the background color change with keyframes-->
+  <div class="contain">
+	 <header class="indexHeader">
+		 
+				<!--The logo serves as a back button to the main page "index.html"-->
+				
+					<!--I include on the class the "animated slideInDown" to animate 
+					the menu when we open it first (imported API). Additionally, the id is utilized by a javascript function-->
+					<nav class="sticky">
+
+							<!--The logo serves as a back button to the main page "index.html"-->
+							<a href="index.html"><img src="images/logo1.png" alt="image" class="logo"></a>
+							<!--I include on the class the "animated slideInDown" to animate the menu when we open first it (imported API)-->
+							<ul class="main-nav animated slideInDown ,border" id="check-class">
+									<li><a href="index.html">HOME</a></li>
+                                    <li><a href="recipes.html">PRODUCTS</a></li>
+                                    <li><a href="purchase.php">Purchase</a></li>
+									<li><a href="directions.html">Directions</a></li>
+									<li><a href="test.php">Test Files</a></li>
+                                    
+							</ul>
+							<a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+						
+					</nav>
+		  <div class="main-content-header">
+			  <h1> WELCOME TO <span class="colorchange">APALLOU CAFE</span>.</h1>
+			  <h1> THE HOUSE OF A CAKE LOVER! </h1>
+			  <br>
+			  <a href="recipes.html" class="btn btn-full"> click to order</a>
+		  </div>
+	 </header>
+    <!--An iframe is used to display a web page within a web page-->
+		<iframe class="video" src="https://www.youtube.com/embed/VW2CmHsN0bo?rel=0;&autoplay=1" frameborder="0" allowfullscreen ></iframe>	
+ </div>
+ <footer class="free">
+		<h2>Get In Touch</h2>
+		<p>Email Come by or Order Online</p>
+		<p>Email:
+			<strong>contact@appalou.com</strong>
+		</p>
+		<p>Phone:
+			<strong>(+30) 555-5555</strong>
+		</p>
+		<br>
+		<div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+
+      </div>
+	</footer>
+</body>
+</html>
